@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- ====== Favicon ====== -->
+    <link
+      rel="shortcut icon"
+      href="images/favicon-32x32.png"
+      type="image/png"
+    />
+    <!-- ====== Boxicons ====== -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ====== Swiper CSS ====== -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <!-- ====== Custom CSS ====== -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Fashion Shop</title>
+  </head>
+  <body>
+    <!-- ====== Header ====== -->
+    <header class="header">
+      <!-- ====== Navigation ====== -->
+      <nav class="navbar">
+        <div class="row container d-flex">
+          <div class="logo d-flex">
+            <img src="https://img.icons8.com/3d-fluency/64/null/shop.png"/>
+            <a class="title-shop">Shop XXX</a>
+          </div>
+
+          <div class="nav-list d-flex">
+            <a href="">Trang chủ</a>
+            <a href="">Sản phẩm</a>
+            <a href="">Bộ sưu tập</a>
+            <a href="">Thương hiệu</a>
+            <a href="">Thông tin về chúng tôi</a>
+            <div class="close">
+              <i class="bx bx-x"></i>
+            </div>
+            <a class="user-link">Login</a>
+          </div>
+
+          <div class="icons d-flex">
+            <div class="icon d-flex"><i class="bx bx-search"></i></div>
+            <div class="icon user-icon d-flex">
+              <i class="bx bx-user"></i>
+            </div>
+            <div class="icon d-flex">
+              <i class="bx bx-bell"></i>
+              <span></span>
+            </div>
+          </div>
+
+          <!-- Hamburger -->
+          <div class="hamburger">
+            <i class="bx bx-menu-alt-right"></i>
+          </div>
+        </div>
+      </nav>
+
+      <!-- ====== Hero Area ====== -->
+      <div class="hero">
+        <div class="row container d-flex">
+          <div class="col">
+            <span class="subtitle">Bộ sưu tập thu đông</span>
+            <h1>Thờ<span class="i">i</span>trang</h1>
+            <p>Hãy lựa chọn món đồ đẹp nhất dành cho bạn</p>
+
+            <button class="btn">Khám phá ngay!</button>
+          </div>
+          <img src="./images/woman-in-cart.png" alt="" />
+        </div>
+      </div>
+    </header>
+    <!-- ====== Collection ====== -->
+    <section class="section collection">
+      <div class="title">
+        <span class="tt-up">Bộ sưu tập</span>
+        <h2 class="tt-up">Bộ sư tập hàng đầu của chúng tôi</h2>
+      </div>
+      <div class="filters d-flex">
+        <div data-filter="Jewellery">Quần áo</div>
+        <div data-filter="Accessories">Đồ mặc ngoài</div>
+        <div data-filter="Dresses">Phụ kiện</div>
+        <div data-filter="Footwear">Giày dép</div>
+      </div>
+
+      <div class="products container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper" id="products">
+            <div class="swiper-slide">
+              <div class="product">
+                <div class="top d-flex">
+                  <img src="./images/product-1.png" alt="" />
+                  <div class="icon d-flex">
+                    <i class="bx bxs-heart"></i>
+                  </div>
+                </div>
+                <div class="bottom">
+                  <h4>Nike Air Men’s Hoodie - Imported Hoodie Red</h4>
+                  <div class="d-flex">
+                    <div class="price">150.000 VND</div>
+                    <div class="rating">
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                      <i class="bx bxs-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="pagination">
+          <div class="custom-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== New Arrival ====== -->
+    <section class="section new-arrival">
+      <div class="title">
+        <span class="tt-up">Sản phẩm nổi bật</span>
+        <h2 class="tt-up">Bộ sưu tập mới nhất</h2>
+      </div>
+
+      <div class="row container">
+        <div class="col col-1">
+          <img src="./images/poster-1.png" alt="" />
+          <h3>
+            2023 Nổi bật <br />
+            Sản phẩm dành cho phụ nữ
+          </h3>
+        </div>
+        <div class="col col-2">
+          <img src="./images/poster-2.png" alt="" />
+          <h3>
+            2023 Ưu đãi <br />
+            Các ưu đãi dành cho thành viên mới
+          </h3>
+        </div>
+        <div class="col col-3">
+          <img src="./images/poster-3.png" alt="" />
+          <h3>
+            2023 Tín đồ thời trang <br />
+            Mua sắm thả ga không lo hết tiền <br />
+            <span>Khám phá nhiều hơn tại của hàng của chúng tôi</span>
+          </h3>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Categories ====== -->
+    <section class="section categories">
+      <div class="title">
+        <span class="tt-up">Danh mục sản phẩm</span>
+        <h2 class="tt-up">2023 Sản phẩm mới nhất</h2>
+      </div>
+
+      <div class="products container">
+        <div class="product">
+          <div class="top d-flex">
+            <img src="./images/product-1.png" alt="" />
+            <div class="icon d-flex">
+              <i class="bx bxs-heart"></i>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="d-flex">
+              <h4>Nike Air Men’s Hoodie - Imported Hoodie Red</h4>
+              <a href="" class="btn cart-btn">Add to Cart</a>
+            </div>
+            <div class="d-flex">
+              <div class="price">150.000 VND</div>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="top d-flex">
+            <img src="./images/product-1.png" alt="" />
+            <div class="icon d-flex">
+              <i class="bx bxs-heart"></i>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="d-flex">
+              <h4>Nike Air Men’s Hoodie - Imported Hoodie Red</h4>
+              <a href="" class="btn cart-btn">Add to Cart</a>
+            </div>
+            <div class="d-flex">
+              <div class="price">150.000 VND</div>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="top d-flex">
+            <img src="./images/product-1.png" alt="" />
+            <div class="icon d-flex">
+              <i class="bx bxs-heart"></i>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="d-flex">
+              <h4>Nike Air Men’s Hoodie - Imported Hoodie Red</h4>
+              <a href="" class="btn cart-btn">Add to Cart</a>
+            </div>
+            <div class="d-flex">
+              <div class="price">150.000 VND</div>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product">
+          <div class="top d-flex">
+            <img src="./images/product-1.png" alt="" />
+            <div class="icon d-flex">
+              <i class="bx bxs-heart"></i>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="d-flex">
+              <h4>Nike Air Men’s Hoodie - Imported Hoodie Red</h4>
+              <a href="" class="btn cart-btn">Add to Cart</a>
+            </div>
+            <div class="d-flex">
+              <div class="price">150.000 VND</div>
+              <div class="rating">
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+                <i class="bx bxs-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="button d-flex">
+        <a class="btn loadmore">Xem thêm</a>
+      </div>
+    </section>
+
+    <!-- ====== Statistics ====== -->
+    <section class="section statistics">
+      <div class="title">
+        <span class="tt-up">Bắt đầu</span>
+        <h2 class="tt-up">Thống kê của chúng tôi</h2>
+      </div>
+
+      <div class="row container">
+        <div class="col">
+          <div class="icon">
+            <i class="bx bxs-check-square"></i>
+          </div>
+          <h3>Hệ thống đặt hàng dễ dàng</h3>
+          
+        </div>
+        <div class="col">
+          <div class="icon">
+            <i class="bx bxs-user"></i>
+          </div>
+          <h3>Giao hàng đúng hẹn</h3>
+          
+        </div>
+        <div class="col">
+          <div class="icon">
+            <i class="bx bxs-dollar-circle"></i>
+          </div>
+          <h3>Đảm bảo hoàn tiền</h3>
+          
+        </div>
+        <div class="col">
+          <div class="icon">
+            <i class="bx bxs-user"></i>
+          </div>
+          <h3>Hỗ trợ khách hàng 24/7</h3>
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Blogs ====== -->
+    <section class="section blog">
+      <div class="title">
+        <span class="tt-up">Bài viết</span>
+        <h2 class="tt-up">Bài viết mới nhất</h2>
+      </div>
+
+      <div class="row container">
+        <div class="col">
+          <div class="top">
+            <img src="./images/blog-1.png" alt="" />
+          </div>
+          <div class="bottom">
+            <h3>Tạp chí thời trang</h3>
+            <h4>
+              xxxxxxxxxxxxxxxxxxxxxxxx
+            </h4>
+            <span>10 January 2021</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="top">
+            <img src="./images/blog-2.png" alt="" />
+          </div>
+          <div class="bottom">
+            <h3>Tạp chí thời trang</h3>
+            <h4>
+              xxxxxxxxxxxxxxxxxxxxxxxx
+            </h4>
+            <span>10 January 2021</span>
+          </div>
+        </div>
+        <div class="col">
+          <div class="top">
+            <img src="./images/blog-3.png" alt="" />
+          </div>
+          <div class="bottom">
+            <h3>Tạp chí thời trang</h3>
+            <h4>
+              xxxxxxxxxxxxxxxxxxxxxxxx
+            </h4>
+            <span>10 January 2021</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====== Footer ====== -->
+    <footer class="footer">
+      <div class="row container">
+        <div class="col">
+          <div class="logo d-flex">
+            <img src="https://img.icons8.com/3d-fluency/64/null/shop.png"/>
+          </div>
+          <p>
+            Cửa hàng của chúng tôi sẽ mang lại những sản phẩm chất lượng và tốt nhất đến tay người tiêu dùng
+          </p>
+          <div class="icons d-flex">
+            <div class="icon d-flex">
+              <i class="bx bxl-facebook"></i>
+            </div>
+            <div class="icon d-flex"><i class="bx bxl-twitter"></i></div>
+            <div class="icon d-flex"><i class="bx bxl-instagram"></i></div>
+            <div class="icon d-flex"><i class="bx bxl-youtube"></i></div>
+          </div>
+          <p class="color">
+            Copyrights 2023 <br />
+            @tranthong
+          </p>
+        </div>
+        <div class="col">
+          <div>
+            <h4>Sản phẩm</h4>
+            <a href="">Địa điểm</a>
+            <a href="">Dịch vụ</a>
+            <a href="">Quốc gia</a>
+          </div>
+          <div>
+            <h4>Loại sản phẩm</h4>
+            <a href="">Men</a>
+            <a href="">Women</a>
+            <a href="">Kids</a>
+            <a href="">Sản phẩm bán chạy</a>
+            <a href="">Sản nổi bật</a>
+          </div>
+          <div>
+            <h4>Tài khoản của tôi</h4>
+            <a href="">My Account</a>
+            <a href="">Hoàn tiền</a>
+            <a href="">Lịch sử thanh toán</a>
+          </div>
+          <div>
+            <h4>Về chúng tôi</h4>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-map"></i></div>
+              <span>123 Việt Nam</span>
+            </div>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-envelope"></i></div>
+              <span>info@tranthong.com</span>
+            </div>
+            <div class="d-flex">
+              <div class="icon"><i class="bx bxs-phone"></i></div>
+              <span>0395557279</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ====== Login and Signup Form ====== -->
+    <div class="user-form">
+      <div class="close-form d-flex"><i class="bx bx-x"></i></div>
+      <div class="form-wrapper container">
+        <div class="user login">
+          <div class="img-box">
+            <img src="./images/login.svg" alt="" />
+          </div>
+          <div class="form-box">
+            <div class="top">
+              <p>
+                Không phải thành viên?
+                <span data-id="#ff0066">Đăng ký ngay</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>Hello Again!</h2>
+                <p>Chào mừng bạn đến với cửa hàng</p>
+                <input type="text" placeholder="Nhập tên người dùng" />
+                <div>
+                  <input type="password" placeholder="Nhập mật khẩu" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <span>Quên mật khẩu</span>
+                <input type="Submit" value="Đăng nhập" />
+              </div>
+              <div class="form-control">
+                <p>Or continue with</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/apple.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/github.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Register -->
+        <div class="user signup">
+          <div class="form-box">
+            <div class="top">
+              <p>
+                Already a member?
+                <span data-id="#1a1aff">Login now</span>
+              </p>
+            </div>
+            <form action="">
+              <div class="form-control">
+                <h2>Welcome Codevo!</h2>
+                <p>It's good to have you.</p>
+                <input type="email" placeholder="Enter Email" />
+                <div>
+                  <input type="password" placeholder="Password" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <div>
+                  <input type="password" placeholder="Confirm Password" />
+                  <div class="icon form-icon">
+                    <img src="./images/eye.svg" alt="" />
+                  </div>
+                </div>
+                <input type="Submit" value="Register" />
+              </div>
+              <div class="form-control">
+                <p>Or continue with</p>
+                <div class="icons">
+                  <div class="icon">
+                    <img src="./images/search.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/apple.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/facebook.svg" alt="" />
+                  </div>
+                  <div class="icon">
+                    <img src="./images/github.svg" alt="" />
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="img-box">
+            <img src="./images/trial.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ====== SwiperJs ====== -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- ====== Custom Script ====== -->
+    <script src="./js/product.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
